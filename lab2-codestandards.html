@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab 2-Login Page</title>
+	<link href="lab2-codestandards.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Login Page</h1>
+    
+    <div class="formBlock">
+        <form method="post" class="authForm" name="authForm">
+            <!-- https://www.w3schools.com/tags/tag_fieldset.asp -->
+            <fieldset>
+                <legend>User Authentication</legend>
+                <p>
+                    <label class="authForm__label" for="username">Username: </label>
+                    <input class="authForm__input" type="text" id="username" name="username" />
+                </p>
+
+                <p>
+                    <label class="authForm__label" for="password">Password: </label>
+                    <input class="authForm__input" type="password" id="password" name="password" />
+                </p>
+
+                <input type="submit" value="Log in" class="authForm__button"/>
+            </fieldset>
+        </form>
+    </div>
+    
+    <div class="message">
+        <p class="message__username"></p>
+        <p class="message__password"></p>
+    </div>
+    
+<script type="text/javascript" src="lab2-codestandards.js"></script>
+</body>
+</html>
